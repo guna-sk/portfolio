@@ -1,0 +1,43 @@
+{% extends 'dummy.html' %}
+{% block title %}
+{% load static %}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href='{% static "css/beauty.css" %}'>
+{% endblock %}
+{% block body-block %}
+{% endblock %}
+{% block content %}
+<h1 id="h1">Project</h1>
+<section class="projects">
+    <div class="project c">
+        <div class="tea">
+            <h2>Wireless Power Transfer for AGVs</h2>
+            <p>A system to wirelessly charge automated guided vehicles.</p>
+            <ul>
+                <li><strong>Technologies:</strong> Electrical Machines, Power Electronics</li>
+                <li><strong>Features:</strong> Efficient energy transfer, automation, safety measures</li>
+                <li><strong>Challenges:</strong> Power loss minimization, circuit design optimization</li>
+            </ul>
+        </div>
+        <div class="ie">
+            <img src='{% static "images/vechicle.jpg" %}' alt="">
+        </div>
+    </div>
+
+    <div class="project d">
+        <div class="i">
+            <img src='{% static "images/wire.jpg" %}' alt="">
+        </div>
+        <div class="tee">
+            <h2>Job Portal using Django <span>(Ongoing)</span></h2>
+            <p>A web-based platform for job seekers and recruiters.</p>
+            <ul>
+                <li><strong>Technologies:</strong> Django, Python, HTML, CSS, JavaScript, PostgreSQL</li>
+                <li><strong>Features:</strong> Job posting, resume upload, search and filtering</li>
+                <li><strong>Challenges:</strong> User authentication, database management, UI/UX design</li>
+            </ul>
+        </div>
+        
+    </div>
+</section>
+{% endblock %}

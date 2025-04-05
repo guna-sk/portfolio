@@ -1,0 +1,15 @@
+{% extends 'dummy.html' %}
+{% block title %}
+{% load static %}
+<link rel="stylesheet" href='{% static "css/finish.css" %}'>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+{% endblock %}
+{% block body-block %}
+{% endblock %}
+{% block content %}
+<div class="outer">
+    <div class="i"><img src='{% static "images/Success.jpg" %}' alt=""></div>
+    <div class="a">Thank You</div>
+    <div class="b">Your Message has been Successfully sended</div>
+</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'dummy.html' %}
+{% block title %}
+{% load static %}
+<link rel="stylesheet" href='{% static "css/design.css" %}'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+{% endblock %}
+{% block body-block %}
+{% endblock %}
+{% block content %}
+<h1 id="h1">Skills</h1>
+    <div class="outer h">
+        <div class="im"><img src='{% static "images/work.jpg" %}' alt=""></div>
+        <div class="inner">
+            <div class="tp">Programming Language</div>
+                <div class="pl">
+                    <a href="" class="k"><i class="fa-brands fa-python"></i> PYTHON</a>
+                    <a href="" class="o"><i class="fa-brands fa-js"></i> JAVASCRIPT</a>
+                </div>
+            <div class="tp">Web Development</div>
+                <div class="pl g">
+                    <a href="" class="r"><i class="fa-brands fa-html5"></i> HTML</a>
+                    <a href="" class="l"><i class="fa-brands fa-css3-alt"></i> CSS</a>
+                </div>
+                <div class="pl f">
+                    <a href="" class="m"><i class="fa-solid fa-display"></i> DJANGO</a>
+                    <a href="" class="n"><i class="fa-brands fa-bootstrap"></i> BOOTSTRAP</a>
+                </div>
+        </div>
+    </div>
+    <div class="outer v">
+        <div class="inner in">
+            <div class="tp">Database Management</div>
+                <div class="pl">
+                    <a href="" class="w"><i class="fa-solid fa-database"></i> SQL(MYSQL,POSTGRESQL)</a>
+                </div>
+            <div class="tp">Version Control</div>
+                <div class="pl">
+                    <a href="" class="t"><i class="fa-brands fa-git-alt"></i> GIT</a>
+                    <a href="" class="q"><i class="fa-brands fa-github"></i> GITHUB</a>
+                </div>
+        </div>
+        <div class="cm"><img src='{% static "images/data.jpg" %}' alt=""></div>
+    </div>
+{% endblock %}

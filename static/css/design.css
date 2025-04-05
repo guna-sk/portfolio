@@ -1,0 +1,249 @@
+#h1{
+    color: rgb(197, 197, 30);
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.outer{
+    display: flex;
+}
+
+.inner{
+    padding-left: 80px;
+    padding-top: 20px;
+}
+.in{
+    padding-top: 100px;
+    padding-left: -50px;
+}
+
+img{
+    width: 450px;
+    border-radius: 10px;
+}
+
+.im{
+    padding-left: 80px;
+    padding-top:5px;
+}
+
+.cm{
+    padding-left:60px;
+    margin-bottom: 70px;
+}
+
+.tp{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.pl{
+    font-weight:bold;
+    padding: 10px;
+    justify-content: space-between;
+    margin:30px;
+}
+
+.k{
+        background-color: rgb(252, 240, 70);
+        color: rgb(24, 20, 20);
+        border-radius: 20px;
+        padding: 20px 80px;
+        text-decoration: none;
+}
+.k:hover{
+    color: rgb(24, 20, 20);
+    padding: 25px 85px;
+    text-decoration:underline;
+    font-size: medium;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.322);
+}
+
+.o{
+    background-color:rgb(252, 240, 70);
+    color: rgb(24, 20, 20);
+    border-radius: 20px;
+    padding: 20px 70px;
+    text-decoration: none;
+    margin-left: 80px;
+}
+
+.o:hover{
+    color: rgb(24, 20, 20);
+    padding: 25px 75px;
+    text-decoration:underline;
+    font-size: medium;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.322);
+}
+
+.r{
+    background-color: rgb(252, 240, 70);
+    color: rgb(24, 20, 20);
+    border-radius: 20px;
+    padding: 20px 90px;
+    text-decoration: none;
+}
+.r:hover{
+    color: rgb(24, 20, 20);
+    padding: 25px 95px;
+    text-decoration:underline;
+    font-size: medium;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.322);
+}
+
+.m{
+    background-color: rgb(252, 240, 70);
+    color: rgb(24, 20, 20);
+    border-radius: 20px;
+    padding: 20px 80px;
+    text-decoration: none;
+}
+.m:hover{
+    color: rgb(24, 20, 20);
+    padding: 25px 85px;
+    text-decoration:underline;
+    font-size: medium;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.322);
+}
+
+.t{
+    background-color: rgb(252, 240, 70);
+    color: rgb(24, 20, 20);
+    border-radius: 20px;
+    padding: 20px 100px;
+    text-decoration: none;
+}
+.t:hover{
+    color: rgb(24, 20, 20);
+    padding: 25px 105px;
+    text-decoration:underline;
+    font-size: medium;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.322);
+}
+
+.l{
+    background-color:rgb(252, 240, 70);
+    color: rgb(24, 20, 20);
+    border-radius: 20px;
+    padding: 20px 105px;
+    text-decoration: none;
+    margin-left: 80px;
+}
+
+.l:hover{
+    color: rgb(24, 20, 20);
+    padding: 25px 110px;
+    text-decoration:underline;
+    font-size: medium;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.322);
+}
+
+.n{
+    background-color:rgb(252, 240, 70);
+    color: rgb(24, 20, 20);
+    border-radius: 20px;
+    padding: 20px 68px;
+    text-decoration: none;
+    margin-left: 80px;
+}
+
+.n:hover{
+    color: rgb(24, 20, 20);
+    padding: 25px 73px;
+    text-decoration:underline;
+    font-size: medium;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.322);
+}
+
+.q{
+    background-color:rgb(252, 240, 70);
+    color: rgb(24, 20, 20);
+    border-radius: 20px;
+    padding: 20px 78px;
+    text-decoration: none;
+    margin-left: 80px;
+}
+
+.q:hover{
+    color: rgb(24, 20, 20);
+    padding: 25px 83px;
+    text-decoration:underline;
+    font-size: medium;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.322);
+}
+
+.w{
+    background-color: rgb(252, 240, 70);
+    color: rgb(24, 20, 20);
+    border-radius: 20px;
+    padding: 20px 173px;
+    text-decoration: none;
+}
+.w:hover{
+    color: rgb(24, 20, 20);
+    padding: 25px 178px;
+    text-decoration:underline;
+    font-size: medium;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.322);
+}
+.g{
+    margin-bottom: 60px;
+}
+.h{
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .outer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .inner, .in, .im, .cm {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    img {
+        width: 90%;
+        max-width: 350px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .pl {
+        padding: 10px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .k, .o, .r, .m, .t, .l, .n, .q, .w {
+        display: block;
+        width: 90%;
+        max-width: 250px;
+        margin: 15px auto;
+        text-align: center;
+    }
+
+    .o, .l, .n {
+        display: block;
+        margin: 15px auto;
+        width: 90%;
+        text-align: center;
+    }
+
+    .w {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        max-width: 250px;
+        margin: 15px auto;
+    }
+}

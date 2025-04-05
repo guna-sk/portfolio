@@ -1,0 +1,39 @@
+{% extends 'dummy.html' %}
+{% block title %}
+{% load static %}
+<link rel="stylesheet" href='{% static "css/decorate.css" %}'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+{% endblock %}
+{% block body-block %}
+{% endblock %}
+{% block content %}
+<h1 id="h1">Contact</h1>
+<div class="outer">
+<div><img src='{% static "images/text.jpg" %}' alt=""></div>
+<form method="POST">
+    {% csrf_token %}
+    <div class="fo">
+        <label for="id_name">Name <span>*</span></label>
+        {{form.name}}
+    </div>
+    <div class="fo">
+        <label for="id_email">Email <span>*</span></label>
+        {{form.email}}
+    </div>
+    <div class="fo">
+        <label for="id_subject">Subject <span>*</span></label>
+        {{form.subject}}
+    </div>
+    <div class="fo">
+        <label for="id_message">Message <span>*</span></label>
+        {{form.message}}
+    </div>
+    <div class="bu"><button type="submit" style="border-radius: 10px;" id="bu">Send Message</button></div>
+</form>
+</div>
+<div class="a card-footer text-body-secondary text-center" style="background-color:rgb(252, 240, 70); padding:40px; margin-top:50px">
+    <a href="tel:+916369679945" class="text-decoration-none me-5" style="color:black;"><i class="fa-solid fa-phone"></i> +91-6369679945</a>
+    <a href="mailto:asguna1511@gmai.com" class="text-decoration-none me-5" style="color:black;"><i class="fa-solid fa-envelope"></i> asguna1511@gmail.com</a>
+    <a href="https://t.me/asguna1511" class="text-decoration-none" style="color:black;"><i class="fa-brands fa-telegram"></i> @guna1511</a>
+  </div>
+{% endblock %}

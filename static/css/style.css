@@ -1,0 +1,56 @@
+#b{
+    color: rgb(226, 215, 52);
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif   ;
+    font-size: 35px;
+    padding: 15px 0px 0px 80px;
+}
+
+#c{
+    padding: 20px 0px 0px 420px;
+}
+#d{
+    padding-right:45px;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(226, 215, 52);
+    text-decoration-thickness: 3px;
+}
+
+@media screen and (max-width: 991px) {
+    #b {
+        font-size: 28px;
+        padding: 10px;
+    }
+    #c {
+        display: none;
+    }
+    .offcanvas {
+        width: 250px;
+        background-color: white;
+    }
+
+    .offcanvas-body {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 20px;
+    }
+    .offcanvas-body .nav-item {
+        width: 100%;
+        text-align: left;
+    }
+
+    .offcanvas-body .nav-link {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 15px;
+    }
+}
+button:hover{
+    background-color: rgb(241, 217, 0);
+}

@@ -1,0 +1,101 @@
+#h1{
+    color: rgb(197, 197, 30);
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 10px;
+}
+img{
+    width: 500px;
+    margin-top: 60px;
+}
+.outer{
+    display: flex;
+    margin-left: 100px;
+}
+
+form{
+    width: 33%;
+    margin-top: 40px;
+    margin-left: 180px;
+    padding: 10px;
+}
+span{
+    color: red;
+}
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input,textarea{
+    width:100%;
+    padding: 8px;
+    border-radius:5px;
+    border: 1px solid black;
+}
+.bu{
+    margin-top: 20px;
+    margin-left: 35%;
+}
+
+#bu{
+    background-color:rgb(252, 240, 70);
+    color: black;
+    padding:10px 15px;
+    border: none;
+    font-weight: 600;
+}
+
+#bu:hover{
+    background-color: rgb(241, 217, 0);
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.171);
+}
+@media screen and (max-width: 768px) {
+    .outer {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    img {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    form {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .bu {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .navbar {
+        background-color: white !important;
+        box-shadow: none !important;  
+    }
+
+    .card-footer {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-footer a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px; 
+        margin: 5px 0;
+    }
+}
+
+

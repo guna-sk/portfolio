@@ -1,0 +1,27 @@
+{% extends 'dummy.html' %}
+{% block title %}
+{% load static %}
+    <link rel="stylesheet" href='{% static "css/color.css" %}'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+{% endblock %}
+{% block body-block %}
+{% endblock %}
+{% block content %}
+<div class="outer">
+    <div class="inner">
+    <div class="c">Hi,</div>
+    <div class="c">I'am <span>Gunasekaran</span></h1></div>
+    <div class="c">Web Developer</div>
+    <div class="bu"><form method="get" action="{% url 'download' %}"><button id="bt" type="submit">Resume</button></form></div>
+    </div>
+    <div class="b"><img src='{% static "images/mine.jpg" %}' alt=""></div>
+</div>
+<div class="a text-body-secondary text-left" style="background-color:white; padding-left:130px; margin-top:10px">
+    <i class="fa-brands fa-linkedin"></i>
+    <a href="https://www.linkedin.com/in/gunasekaran-s-58559221a" class="text-decoration-none me-5" style="color: gray;">Linked In</a>
+    <i class="fa-brands fa-square-instagram"></i>
+    <a href="https://www.instagram.com/_g__u__n__a_/?igsh=bDA1eHJ2NmM4bTB6#" class="text-decoration-none me-5" style="color: gray;">Instagram</a>
+    <i class="fa-brands fa-square-github"></i>
+    <a href="https://github.com/guna-sk" class="text-decoration-none" style="color: gray;">GitHub</a>
+  </div>
+{% endblock %}

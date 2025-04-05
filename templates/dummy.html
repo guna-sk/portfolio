@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block title %}
+  {% load static %}
+  {% endblock %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunasekaran</title>
+    <link rel="stylesheet" href='{% static "css/style.css" %}'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+        <a class="navbar-brand" id="b">Gunasekaran.S</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav" id="c">
+                <a class="nav-link active" id="d" href='{% url "home" %}'>Home</a>
+                <a class="nav-link" id="d" href='{% url "about" %}'>About</a>
+                <a class="nav-link" id="d" href='{% url "project" %}'>Project</a>
+                <a class="nav-link" id="d" href='{% url "skills" %}'>Skills</a>
+                <a class="nav-link" id="d" href='{% url "contact" %}'>Contact</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+      <a class="nav-link" href='{% url "home" %}'>Home</a>
+      <a class="nav-link" href='{% url "about" %}'>About</a>
+      <a class="nav-link" href='{% url "project" %}'>Project</a>
+      <a class="nav-link" href='{% url "skills" %}'>Skills</a>
+      <a class="nav-link" href='{% url "contact" %}'>Contact</a>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+{% block content %}
+{% endblock %}
+</html>

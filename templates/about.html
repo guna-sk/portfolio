@@ -1,0 +1,18 @@
+{% extends 'dummy.html' %}
+{% block title %}
+{% load static %}
+<link rel="stylesheet" href='{% static "css/paint.css" %}'>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+{% endblock %}
+{% block body-block %}
+{% endblock %}
+{% block content %}
+<h1 id="h1">About</h1>
+<div class="outer">
+    <div class="i"><img src='{% static "images/about.jpg" %}' alt=""></div>
+    <div class="inner">
+        <div class="c">I'm Gunasekaran</div>
+        <div class="d">A Passionate Python Full-Stack Developer with a strong foundation in Django and Web development. I thrive on solving complex problems and building scalable applications that make a difference. Key Interest on Web Development: Crafting responsive and dynamic websites using Django, JavaScript, HTML, and CSS.</div>
+    </div>
+</div>
+{% endblock %}
